@@ -14,8 +14,16 @@ for d in data:
 print('平均留言長度為',sum_length/len(data))
 
 new = []
-for d in data:#d是字串,data是清單
+for d in data:#d(每一筆留言)是字串,data是清單
      if len(d)<100:
      	new.append(d)
 print('一共有',len(new),'筆留言小於一百字') 
-print(new[2])       
+print(new[2])
+
+good = []
+for e in data:
+	if 'good' in e: #True or False
+		good.append(e)  
+print('一共有',len(good),'提到good')
+
+ 
