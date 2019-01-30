@@ -11,4 +11,11 @@ print('讀取完畢',len(data),'筆資料')
 sum_length = 0	
 for d in data:
 	sum_length += len(d)     
-print('平均留言長度為',sum_length/len(data))        
+print('平均留言長度為',sum_length/len(data))
+
+new = []
+for d in data:#d是字串,data是清單
+     if len(d)<100:
+     	new.append(d)
+print('一共有',len(new),'筆留言小於一百字') 
+print(new[2])       
